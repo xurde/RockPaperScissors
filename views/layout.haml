@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %title= "Rock-Paper-Scissors Game"
+    %meta{ :content => "", :name => "Rock-Paper-Scissors Game" }
+    %meta{ :content => "3 days", :name => "revisit-after" }
+    %link{ :href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license", :title => "Creative Commons Attribution 3.0 Unported License" }
+    <!-- Latest compiled and minified CSS -->
+    %link{ :href => "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", :media => "screen", :rel => "stylesheet" }
+    <!-- Optional theme -->
+    %link{ :href => "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" }
+    %style{ :type => "text/css", :media => "screen"}
+      header h1.huge {font-size:120px !important;}
+      section.content {margin-top: 20px;}
+      footer {margin-top: 50px;}
+  %body
+    %div{ :id => "content", :class => "container" }
+
+      = yield
+
+    %footer{ :class => "text-center" }
+      %p
+        %a{:href => "http://xurdeonrails.com"}= "XurdeOnRails"
+        %span Berlin, 2014

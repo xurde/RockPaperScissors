@@ -1,0 +1,27 @@
+%section{:class => "content"}
+  %header{:class => "text-center"}
+    %h1= "Rock-Paper-Scissors Game"
+  %form{ :role => "form", :action => "/play", :method => :post }
+    %div{:class => "row"}
+      %div{:class => "col-md-6"}
+        %div{ :class => "form-group" }
+          %label= "Player 1 name"
+          %input{ :id => "p1name", :name => "p1name", :type => "text", :class => "form-control", :placeholder => "Enter name", :value => "Player 1" }
+        %div{ :class => "form-group" }
+          %select{ :id => "p1play", :name => "p1play", :class => "form-control" }
+            %option{:value => "empty"}="(empty)"
+            %option{:value => "rock"}="Rock"
+            %option{:value => "paper"}="Paper"
+            %option{:value => "scissors"}="Scissors"
+      %div{:class => "col-md-6"}
+        %div{ :class => "form-group" }
+          %label= "Player 2 name"
+          %input{ :id => "p2name", :name => "p2name", :type => "text", :class => "form-control", :placeholder => "Enter name", :value => "Player 2" }
+        %div{ :class => "form-group" }
+          %select{ :id => "p2play", :name => "p2play", :class => "form-control" }
+            %option{:value => "empty"}="(empty)"
+            %option{:value => "rock"}="Rock"
+            %option{:value => "paper"}="Paper"
+            %option{:value => "scissors"}="Scissors"
+      %p{:class => "text-center"}
+        %button{ :type => "submit", :class => "btn btn-default"}= "Play!"

@@ -1,0 +1,5 @@
+%section{:class => "content"}
+	%header{:class => "text-center"}
+		%h1{:class => "huge"}= "#{@winner.nickname} wins!"
+		%h1= "#{@player1.nickname} played <strong>#{@player1play.capitalize}</strong> | #{@player2.nickname} played <strong>#{@player2play.capitalize}</strong>"
+		%a{:href => "/", :alt => "Play again?"}= "Play again?"
