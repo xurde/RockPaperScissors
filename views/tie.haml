@@ -1,5 +1,5 @@
 %section{:class => "content"}
 	%header{:class => "text-center"}
 		%h1{:class => "huge"}= "Game tied"
-		%h1= "Both #{@player1.nickname} and #{@player2.nickname} played #{@player1play.capitalize}"
+		%h1= "Both #{@player1.nickname} and #{@player2.nickname} played <strong>#{@player1play.capitalize}</strong>"
 		%a{:href => "/", :alt => "Play again?"}= "Play again?"
